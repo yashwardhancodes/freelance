@@ -1,5 +1,4 @@
 import React from 'react'
-import Car1 from
 
 const Card = () => {
   return (
