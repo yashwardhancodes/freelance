@@ -1,16 +1,18 @@
 import React from 'react'
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate = useNavigate();
     return (
         <div className='flex h-12 justify-between items-center mx-8 mt-6 '>
             <img src={logo} alt="" className='h-16' />
 
             <div className='flex items-center space-x-4 justify-between' >
                 <div className="gradient-border text-white flex items-center space-x-5 justify-between px-4  py-2">
-                    <div>Buy</div>
-                    <div>Sell</div>
-                    <div>Rent</div>
+                    <button>Buy</button>
+                    <button onClick={() => navigate("/sell")}>Sell</button>
+                    <button>Rent</button>
                 </div>
 
                 <button className="  text-white px-4  py-2 rounded-full     "

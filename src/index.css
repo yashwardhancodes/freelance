@@ -1,1 +1,43 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("/fonts/GothamRounded-Bold.woff2") format("woff2"),
+       url("/fonts/GothamRounded-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("/fonts/GothamRounded-Medium.woff2") format("woff2"),
+       url("/fonts/GothamRounded-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  cursor: "pointer";
+
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: flex;
+  min-width: fit-content;
+  animation: scroll 30s linear infinite;
+  animation-delay: 0s; /* Starts Immediately */
+  will-change: transform; /* Optimized for smooth animation */
+}
+
+.marquee-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}

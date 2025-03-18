@@ -7,13 +7,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: multiply;
+  font-family: 'Gotham Rounded', sans-serif;
+
 }
 
-
+ 
 .gradient-border {
   position: relative;
   border-radius: 100px;
-  background: linear-gradient(transparent, transparent) padding-box,
+  background: linear-gradient(black, black) padding-box,
               linear-gradient(90deg, #7670FF 0%, #5B42FF 100%) border-box;
   border: 2px solid transparent;
   background-clip: padding-box, border-box;
